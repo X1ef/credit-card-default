@@ -101,7 +101,7 @@ curl -X POST http://localhost:8080/predict \
 {
   "prediction": 0,
   "probability": 0.1303,
-  "interpretation": "Клиент не совершит дефолт в следующем месяце"
+  "interpretation": "The client will not default next month"
 }
 ```
 
