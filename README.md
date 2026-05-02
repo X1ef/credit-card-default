@@ -21,7 +21,6 @@ credit-card-default/
 │   └── model.pkl           # Обученная модель (joblib)
 ├── tests/
 │   └── test_api.py         # Pytest-тесты
-├── notebooks/              # Место для EDA-ноутбуков
 ├── data/
 │   └── UCI_Credit_Card.csv # Датасет
 ├── Dockerfile
