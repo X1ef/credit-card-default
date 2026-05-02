@@ -127,6 +127,7 @@ docker push x1ef/credit-default-api:latest
 ```
 
 Образ: `docker pull x1ef/credit-default-api:latest`
+
 Ссылка на docker-образ: https://hub.docker.com/r/x1ef/credit-default-api
 
 ---
