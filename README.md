@@ -20,7 +20,8 @@ credit-card-default/
 ├── models/
 │   └── model.pkl           # Обученная модель (joblib)
 ├── tests/
-│   └── test_api.py         # Pytest-тесты
+│   ├── test_api.py         # Pytest-тесты
+│   └── *.png               # Скриншоты (PNG) с демонстрацией работы  
 ├── data/
 │   └── UCI_Credit_Card.csv # Датасет
 ├── Dockerfile
@@ -126,6 +127,7 @@ docker push x1ef/credit-default-api:latest
 ```
 
 Образ: `docker pull x1ef/credit-default-api:latest`
+Ссылка на docker-образ: https://hub.docker.com/r/x1ef/credit-default-api
 
 ---
 
