@@ -35,7 +35,7 @@ def health():
 def predict_endpoint():
     data = request.get_json(silent=True)
     if data is None:
-        return jsonify({'error': 'Тело запроса должно быть валидным JSON'}), 400
+        return jsonify({'error': 'The request body must be valid JSON'}), 400
 
     logger.info({'event': 'predict_request', 'input_keys': list(data.keys())})
 
@@ -45,9 +45,9 @@ def predict_endpoint():
         return jsonify({'error': str(e)}), 400
 
     interpretation = (
-        'Клиент совершит дефолт в следующем месяце'
+        'The client will default next month'
         if result['prediction'] == 1
-        else 'Клиент не совершит дефолт в следующем месяце'
+        else 'The client will not default next month'
     )
 
     response = {
